@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+body, input, button{
+  font-family: 'DM Sans', sans-serif;
+}
+
+main{
+  background: #FFFFFF;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: .5rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+  width: min(42.5rem, 90%);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hide{
+  display: none;
+}
+
+h1, h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #34355B;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+
+/*Home*/
+.home p{
+  margin:1.4rem auto 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #34355B;
+}
+
+.home button{
+  background: #FFFFFF;
+  border-style: none;
+  height: 20rem;
+  width: 30rem;
+  cursor: pointer;
+}
+
+.home button:hover{
+  animation: tremble 0.5s infinite;
+}
+
+/*Sorte*/
+.sorte p{
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #000000;
+  background: #E4EDF1;
+
+  width: 33rem;
+  height: 10.7rem;
+  padding: 1rem;
+  gap: 1rem;
+
+  box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+
+  margin: 1.7rem auto;
+
+  animation: popLuck 1s ease-out;
+}
+
+.sorte button{
+  padding: 1.6rem;
+  gap: 1rem;
+
+  width: 17.4rem;
+  height: 5.2rem;
+
+  background: #FF9500;
+  border-radius: .4rem;
+  border-style: none;
+
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  color: #FFFFFF;
+
+  margin-top: 1.7rem;
+}
+
+
+/* @keyframes */
+
+
+@keyframes tremble {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-.2rem, 0);
+  }
+  20% {
+    transform: translate(0, .2rem);
+  }
+  30% {
+    transform: translate(.2rem, 0);
+  }
+  40% {
+    transform: translate(0, -.2rem);
+  }
+  50% {
+    transform: translate(-.2rem, 0);
+  }
+  60% {
+    transform: translate(0, .2rem);
+  }
+  70% {
+    transform: translate(.2rem, 0);
+  }
+  80% {
+    transform: translate(0, -.2rem);
+  }
+  90% {
+    transform: translate(-.2rem, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes popLuck {
+  from {
+    transform: translateY(12rem)
+    scale(0.3);
+  }
+  to {
+    transform: translateY(0)
+    scale(1);
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
